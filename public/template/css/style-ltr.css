@@ -1,0 +1,14 @@
+.mainWrp{
+    direction: ltr;
+    text-align: left;
+}
+
+.Rtl .headL {
+    padding: 0 0 0 20px;
+}
+.Rtl .headL .headN {
+    padding: 0 0 0 15px;
+}
+.mnMob{
+    right: auto;
+}
