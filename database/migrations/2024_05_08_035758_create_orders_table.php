@@ -27,8 +27,10 @@ return new class extends Migration
 
             $table->decimal('total_amount', 10, 2);
 
+
             $table->timestamps();
 
+            $table->softDeletes();
 
             $table->foreign('group_id')->references('id')->on('groups');
 

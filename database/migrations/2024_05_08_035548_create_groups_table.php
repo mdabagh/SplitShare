@@ -29,8 +29,10 @@ return new class extends Migration
 
             $table->timestamp('invite_expiry')->nullable();
 
+
             $table->timestamps();
 
+            $table->softDeletes();
 
             $table->foreign('creator_id')->references('id')->on('users');
 

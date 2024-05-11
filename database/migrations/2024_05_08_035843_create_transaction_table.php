@@ -27,6 +27,10 @@ return new class extends Migration
 
             $table->timestamp('paid_at')->useCurrent(); // Use timestamp for paid_at with default current timestamp
 
+            $table->timestamps();
+
+            $table->softDeletes(); 
+            
             $table->foreign('payer_id')->references('id')->on('users'); // Add foreign key for payer_id
 
             $table->foreign('receiver_id')->references('id')->on('users'); // Add foreign key for receiver_id
