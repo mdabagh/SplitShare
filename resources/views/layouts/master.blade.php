@@ -35,12 +35,10 @@
                             <div class='headInnr'>
                                 <h1 class='headH'></h1>
                                 <bdi>
-                                    <a href="https://bayangar.com/" class='headTtl'>بیانگر</a>
+                                    <a href="https://bayangar.com/" class='headTtl'>{{ __('layout.title') }}</a>
                                 </bdi>
                             </div>
-                            <div class='headDsc hidden'>
-                                رسانه آموزشی بیانگر
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -96,7 +94,7 @@
                             <div class='widget PageList' data-version='2' id='PageList002'>
                                 <ul class='mMenu'>
                                     <li>
-                                        <a href='https://bayangar.com/sitemap_index.xml'>نقشه سایت</a>
+                                        <a href='https://bayangar.com/sitemap_index.xml'>{{ __('layout.donate') }}</a>
                                     </li>
 
                                 </ul>
@@ -162,129 +160,7 @@
                                 <ul class='mnMn' itemscope='itemscope'
                                     itemtype='https://schema.org/SiteNavigationElement'>
                                     <li class='drp br'>
-                                        <input class='drpI hidden' id='drpDwn-1' name='drpDwn' type='checkbox'>
-                                        <label class='a' for='drpDwn-1'>
-                                            <svg class='line' viewbox='0 0 24 24'>
-                                                <g transform='translate(2.500000, 2.500000)'>
-                                                    <line x1='6.6787' x2='12.4937' y1='12.0742685'
-                                                        y2='12.0742685'>
-                                                    </line>
-                                                    <path d='M-1.13686838e-13,5.29836453
-                                                C-1.13686838e-13,2.85645977 1.25,0.75931691
-                                                3.622,0.272650243 C5.993,-0.214968804
-                                                7.795,-0.0463973758 9.292,0.761221672
-                                                C10.79,1.56884072 10.361,2.76122167
-                                                11.9,3.63645977 C13.44,4.51265024
-                                                15.917,3.19645977 17.535,4.94217405
-                                                C19.229,6.7697931 19.2200005,9.57550739
-                                                19.2200005,11.3640788 C19.2200005,18.1602693
-                                                15.413,18.6993169 9.61,18.6993169
-                                                C3.807,18.6993169 -1.13686838e-13,18.2288407
-                                                -1.13686838e-13,11.3640788
-                                                L-1.13686838e-13,5.29836453 Z'>
-                                                    </path>
-                                                </g>
-                                            </svg>
-                                            <span class='n'>دسته‌بندی‌ها</span>
-                                            <svg class='line d' viewbox='0 0 24 24'>
-                                                <g transform='translate(5.000000, 8.500000)'>
-                                                    <path d='M14,0 C14,0 9.856,7 7,7 C4.145,7 0,0 0,0'></path>
-                                                </g>
-                                            </svg>
-                                        </label>
-                                        <ul id="menu-categories" class="menu">
-                                            <li id="menu-item-33"
-                                                class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-33">
-                                                <a href="https://bayangar.com/space/">نجوم و فضا</a>
-                                            </li>
-                                            <li id="menu-item-34"
-                                                class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-34">
-                                                <a href="https://bayangar.com/philosophy/">فلسفه</a>
-                                            </li>
-                                            <li id="menu-item-35"
-                                                class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-35">
-                                                <a href="https://bayangar.com/psychology/">روانشناسی</a>
-                                            </li>
-                                            <li id="menu-item-36"
-                                                class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-36">
-                                                <a href="https://bayangar.com/art/">هنر</a>
-                                            </li>
-                                            <li id="menu-item-37"
-                                                class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-37">
-                                                <a href="https://bayangar.com/science/">علم و دانش</a>
-                                            </li>
-                                            <li id="menu-item-38"
-                                                class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-38">
-                                                <a href="https://bayangar.com/technology/">تکنولوژی</a>
-                                            </li>
-                                            <li id="menu-item-39"
-                                                class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-39">
-                                                <a href="https://bayangar.com/internet/">اینترنت</a>
-                                            </li>
-                                            <li id="menu-item-40"
-                                                class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-40">
-                                                <a href="https://bayangar.com/skills/">مهارت‌ها</a>
-                                            </li>
-                                            <li id="menu-item-41"
-                                                class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-41">
-                                                <a href="https://bayangar.com/history/">تاریخ</a>
-                                            </li>
-                                            <li id="menu-item-42"
-                                                class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-42">
-                                                <a href="https://bayangar.com/geography/">جغرافیا</a>
-                                            </li>
-                                            <li id="menu-item-43"
-                                                class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-43">
-                                                <a href="https://bayangar.com/physics/">فیزیک</a>
-                                            </li>
-                                            <li id="menu-item-44"
-                                                class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-44">
-                                                <a href="https://bayangar.com/literature/">ادبیات و زبان</a>
-                                            </li>
-                                            <li id="menu-item-45"
-                                                class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-45">
-                                                <a href="https://bayangar.com/chemistry/">شیمی</a>
-                                            </li>
-                                            <li id="menu-item-46"
-                                                class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-46">
-                                                <a href="https://bayangar.com/economy/">اقتصاد</a>
-                                            </li>
-                                            <li id="menu-item-47"
-                                                class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-47">
-                                                <a href="https://bayangar.com/business/">کسب و کار / کارآفرینی</a>
-                                            </li>
-                                            <li id="menu-item-48"
-                                                class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-48">
-                                                <a href="https://bayangar.com/sociology/">جامعه شناسی</a>
-                                            </li>
-                                            <li id="menu-item-50"
-                                                class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-50">
-                                                <a href="https://bayangar.com/biology/">زیست شناسی</a>
-                                            </li>
-                                            <li id="menu-item-49"
-                                                class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-49">
-                                                <a href="https://bayangar.com/zoology/">جانور شناسی</a>
-                                            </li>
-                                            <li id="menu-item-51"
-                                                class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-51">
-                                                <a href="https://bayangar.com/anatomy/">آناتومی / بدن انسان</a>
-                                            </li>
-                                            <li id="menu-item-52"
-                                                class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-52">
-                                                <a href="https://bayangar.com/health/">سلامت عمومی</a>
-                                            </li>
-                                            <li id="menu-item-53"
-                                                class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-53">
-                                                <a href="https://bayangar.com/engineering/">مهندسی</a>
-                                            </li>
-                                            <li id="menu-item-54"
-                                                class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-54">
-                                                <a href="https://bayangar.com/environment/">محیط زیست</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a class='a' href='https://bayangar.com/' itemprop='url'>
+                                    <a class='a' href='https://bayangar.com/' itemprop='url'>
                                             <svg class='line' viewbox='0 0 24 24'>
                                                 <g transform='translate(2.400000, 2.000000)'>
                                                     <path d='M1.24344979e-14,11.713 C1.24344979e-14,6.082
@@ -296,9 +172,10 @@
                                                     </path>
                                                 </g>
                                             </svg>
-                                            <span class='n' itemprop='name'>صفحه اصلی</span>
+                                            <span class='n' itemprop='name'>{{ __('layout.home') }}</span>
                                         </a>
                                     </li>
+                                
                                     <li>
                                         <a class='a' href='https://bayangar.com/about/' itemprop='url'>
                                             <svg class='line' viewbox='0 0 24 24'>
@@ -326,32 +203,10 @@
                                                     </path>
                                                 </g>
                                             </svg>
-                                            <span class='n' itemprop='name'>درباره ما</span>
+                                            <span class='n' itemprop='name'>{{ __('layout.about') }}</span>
                                         </a>
                                     </li>
-                                    <li class='br'>
-                                        <a class='a' href='https://bayangar.com/contact/' itemprop='url'>
-                                            <svg class='line' viewbox='0 0 24 24'>
-                                                <g transform='translate(2.452080, 2.851980)'>
-                                                    <path d='M15.0928322,6.167017 C15.0928322,6.167017
-                                                11.8828071,10.0196486 9.53493746,10.0196486
-                                                C7.18807029,10.0196486 3.941955,6.167017
-                                                3.941955,6.167017'>
-                                                    </path>
-                                                    <path d='M1.04805054e-13,9.11679198
-                                                C1.04805054e-13,2.27869674
-                                                2.38095238,8.8817842e-15 9.52380952,8.8817842e-15
-                                                C16.6666667,8.8817842e-15 19.047619,2.27869674
-                                                19.047619,9.11679198 C19.047619,15.9538847
-                                                16.6666667,18.233584 9.52380952,18.233584
-                                                C2.38095238,18.233584 1.04805054e-13,15.9538847
-                                                1.04805054e-13,9.11679198 Z'>
-                                                    </path>
-                                                </g>
-                                            </svg>
-                                            <span class='n' itemprop='name'>تماس با ما</span>
-                                        </a>
-                                    </li>
+                                    
                                 </ul>
                             </div>
                         </div>
