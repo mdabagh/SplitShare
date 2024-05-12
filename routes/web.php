@@ -14,5 +14,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [AuthController::class, 'index']);
+Route::get('/login', [AuthController::class, 'index'])->name('login');
+
+Route::middleware(['auth'])->group(function () {
+    Route::get('/', [AuthController::class, 'index'])->name('home');
+
+});
+
 
