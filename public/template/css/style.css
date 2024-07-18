@@ -166,7 +166,7 @@ textarea {
 }
 
 
-a{
+/* a{
     appearance: auto;
     font-style: ;
     font-variant-ligatures: ;
@@ -208,7 +208,7 @@ a{
 
 a:active {
     border-style: inset;
-}
+} */
 
 input::placeholder {
     color: rgba(0, 0, 0, .5)
