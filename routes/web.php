@@ -15,6 +15,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/login', [AuthController::class, 'index'])->name('login');
+Route::get('/auth/google/redirect', [AuthController::class, 'googleRedirect'])->name('login.google.redirect');
+Route::get('/auth/google/callback', [AuthController::class, 'googleCallback'])->name('login.google.callback');
+
+
 
 Route::middleware(['auth'])->group(function () {
     Route::get('/', [AuthController::class, 'index'])->name('home');
