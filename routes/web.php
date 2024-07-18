@@ -15,10 +15,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/login', [AuthController::class, 'index'])->name('login');
+Route::post('/login', [AuthController::class, 'login'])->name('login.store');
 Route::get('/auth/google/redirect', [AuthController::class, 'googleRedirect'])->name('login.google.redirect');
 Route::get('/auth/google/callback', [AuthController::class, 'googleCallback'])->name('login.google.callback');
 
-
+Route::get('/auth/github/redirect', [AuthController::class, 'githubRedirect'])->name('login.github.redirect');
+Route::get('/auth/github/callback', [AuthController::class, 'githubCallback'])->name('login.github.callback');
 
 Route::middleware(['auth'])->group(function () {
     Route::get('/', [AuthController::class, 'index'])->name('home');

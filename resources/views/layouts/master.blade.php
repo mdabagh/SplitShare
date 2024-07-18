@@ -215,11 +215,9 @@
                 <label class="fCls" for="offNav"></label>
             </div>
             <div class='blogCont'>
-                <div class='secIn'>
+                @yield('content')
 
-                    @yield('content')
-
-                   
+                <div class='secIn'>                   
                     <div class='mobMn section' id='mobile-menu'>
                         <div class='widget TextList' data-version='2' id='TextList99'>
                             <ul>

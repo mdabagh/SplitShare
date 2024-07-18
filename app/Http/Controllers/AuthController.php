@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Laravel\Socialite\Facades\Socialite;
 
 class AuthController extends Controller
@@ -11,6 +13,32 @@ class AuthController extends Controller
         return view('auth');
     }
 
+    public function login(Request $request)
+    {
+        $credentials = $request->validate([
+            'email' => ['required', 'email'], // Validate email uniqueness
+            'password' => ['required'],
+        ]);
+
+    
+        // Attempt login using Laravel's Auth facade
+        if (Auth::attempt($credentials)) {
+            return redirect()->intended('home');
+        }
+    
+        // Authentication failed: Create user if email doesn't exist
+        $user = User::firstOrCreate([
+            'email' => $request->email,
+            'password' => bcrypt($request->password), // Hash password before saving
+        ]);
+    
+        // Login the newly created user (optional, depending on your needs)
+        if (Auth::login($user)) {
+            return redirect()->intended('home');  // Redirect to dashboard
+        } else {
+            return back()->withErrors(['error' => 'User creation failed.']); // Handle creation error
+        }
+    }
 
     public function googleRedirect(){
         return Socialite::driver('google')->redirect();

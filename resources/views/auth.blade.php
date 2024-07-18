@@ -1,4 +1,4 @@
-@extends('layouts.master')
+{{-- @extends('layouts.master')
 @section('content')
     <div class='blogM'>
         <a href="{{ route('login.google.redirect') }}" class="dlBox fT"
@@ -18,4 +18,28 @@
             </svg> Sign in with Google</a>
 
     </div>
+@endsection --}}
+
+@extends('layouts.master')
+
+@section('content')
+<div class="login-form">
+  <form method="POST" action="{{ route('login.store') }}">
+    @csrf
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" required>
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" name="password" id="password" required>
+    </div>
+    <button type="submit">Login</button>
+  </form>
+
+  <div class="social-login">
+    <a href="{{ route('login.google.redirect') }}">Sign in with Google</a>
+    <a href="{{ route('login.github.redirect') }}">Sign in with GitHub</a>
+  </div>
+</div>
 @endsection
