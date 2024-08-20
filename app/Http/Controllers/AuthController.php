@@ -20,18 +20,22 @@ class AuthController extends Controller
             'password' => ['required'],
         ]);
 
-    
+
         // Attempt login using Laravel's Auth facade
         if (Auth::attempt($credentials)) {
-            return redirect()->intended('home');
+            return redirect()->route('home');
         }
-    
+
         // Authentication failed: Create user if email doesn't exist
-        $user = User::firstOrCreate([
-            'email' => $request->email,
-            'password' => bcrypt($request->password), // Hash password before saving
-        ]);
-    
+
+
+        $user = User::firstOrCreate(
+            ['email' => $request->email, 'password' => bcrypt($request->password)],
+            ['name' => explode('@', $request->email)[0]]
+        );
+
+        //dd($user);
+
         // Login the newly created user (optional, depending on your needs)
         if (Auth::login($user)) {
             return redirect()->intended('home');  // Redirect to dashboard

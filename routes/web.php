@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\DashboardController;
+
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -23,7 +25,7 @@ Route::get('/auth/github/redirect', [AuthController::class, 'githubRedirect'])->
 Route::get('/auth/github/callback', [AuthController::class, 'githubCallback'])->name('login.github.callback');
 
 Route::middleware(['auth'])->group(function () {
-    Route::get('/', [AuthController::class, 'index'])->name('home');
+    Route::get('/', [DashboardController::class, 'index'])->name('home');
 
 });
 
